@@ -1,6 +1,4 @@
 import React from "react";
-import Chart from "chart.js/auto";
-import { Bar, Line } from "react-chartjs-2";
 import axios from "axios";
 function Char() {
   const [win, setWin] = React.useState();
@@ -51,9 +49,7 @@ function Char() {
     ],
   };
   return (
-    <div className="chart-div">
-      <Line type="line" data={data} />
-    </div>
+    <div className="chart-div">{/* <Line type="line" data={data} /> */}</div>
   );
 }
 
