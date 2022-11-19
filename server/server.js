@@ -216,7 +216,7 @@ app.post("/game", (req, res) => {
   const victoryGames = req.query.vitoryGames;
   const nextStage = req.query.nextStage;
 
-  console.log("asddas");
+  // console.log("asddas");
 
   if (게임월드컵[nextStage].length > 0) {
     res.send({

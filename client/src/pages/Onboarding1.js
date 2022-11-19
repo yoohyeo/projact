@@ -40,7 +40,7 @@ function Onboarding1() {
   const sendGame = async () => {
     await axios({
       method: "get",
-      url: "http://localhost:5000/game",
+      url: "http://54.249.49.204:5000/game",
     })
       .then((response) => {
         const data = response.data;
@@ -103,7 +103,7 @@ function Onboarding1() {
 
                     await axios({
                       method: "post",
-                      url: "http://localhost:5000/game",
+                      url: "http://54.249.49.204:5000/game",
                       headers: { "Content-Type": "application/json" },
                       params: {
                         vitoryGames: vitoryGames,

@@ -22,7 +22,7 @@ function Result() {
   const sendGame = async () => {
     await axios({
       method: "get",
-      url: "http://localhost:5000/game",
+      url: "http://54.249.49.204:5000/game",
     })
       .then((response) => {
         const data = response.data;
@@ -57,7 +57,7 @@ function Result() {
         type="button"
         onClick={async () => {
           await axios({
-            url: "http://localhost:5000/reStart",
+            url: "http://54.249.49.204:5000/reStart",
           }).then((response) => {
             const { 게임월드컵 } = response.data;
             setGame(게임월드컵);

@@ -8,7 +8,7 @@ function Char() {
   const sendGame = async () => {
     await axios({
       method: "get",
-      url: "http://localhost:5000/win",
+      url: "http://54.249.49.204:5000/win",
     })
       .then((response) => {
         const data = response.data;
